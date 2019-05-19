@@ -20,7 +20,7 @@ Let's load the data and take a look on it.
 ```{r}
 library(datasets)
 data(ToothGrowth)
-head(ToothGrowth)
+head(ToothGrowth,4)
 dim(ToothGrowth)
 ```
 So, there are 60 pigs. We can divide them into 6 groups - depending on delivery method and dose. How many pigs are in each group?
@@ -33,9 +33,7 @@ There are 10 pigs in each group. And what is the total length for each group?
 ```{r}
 dcast(tmelt,supp~dose, sum)
 ```
-It seems that tooth's length increases when dose increases. Length for delivery method orange juice is bigger for small doses (0.5, 1) and smaller for dose 2.
-
-Now let's plot lengths grouped by delivery method and doses.
+It seems that tooth's length increases when dose increases. Length for delivery method orange juice is bigger for small doses (0.5, 1) and smaller for dose 2. Now let's plot lengths grouped by delivery method and doses.
 ```{r}
 library(ggplot2)
 ToothGrowth2 <- ToothGrowth

@@ -3,8 +3,8 @@ title: 'Investigation of the distribution of means of 40 exponential distributed
 author: "Olga Larina"
 date: "5/17/2019"
 output:
-  pdf_document: default
   html_document: default
+  pdf_document: default
 ---
 
 ```{r setup, include=FALSE}
